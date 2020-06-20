@@ -1,54 +1,425 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset="utf-8"></meta>
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-	<title>自我介紹</title>
-	<style type="text/css">
-	.head{
-		background-color:#003344;color:white;font-weight:bold;font-size:30px;
-		text-align:center;padding:10px;
-	}
-	.title{font-weight:bold;font-size:40px}
-	.content{
+  <title>We miss you</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" type="text/css" href="myCSS.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="/your-path-to-fontawesome-free-5.13.0-web/css/all.css">
+
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif,Microsoft JhengHei;}
+body, html {
+  height: 100%;
+  color: #777;
+  line-height: 1.8;
+}
+
+/* Create a Parallax Effect */
+.bgimg-1, .bgimg-2, .bgimg-3 {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* First image (Logo. Full height) */
+.bgimg-1 {
+  background-image: url('https://liuhappyfamily.neocities.org/img1.jpg');
+  min-height: 100%;
+}
+
+/* Second image (Portfolio) */
+.bgimg-2 {
+  background-image: url("https://liuhappyfamily.neocities.org/family1.jpg");
+  min-height: 100%;
+}
+
+/* Third image (Contact) */
+.bgimg-3 {
+  background-image: url("https://liuhappyfamily.neocities.org/img3.jpg");
+  min-height: 100%;
+}
+
+/*.content{
 		width:1000px;margin-left:auto;margin-right:auto;border:1px solid red;height:100px;
 	}
-	.keyword{color:red}
-	.box{
-		width:280px;padding:10px;margin:10px;background-color:white;
-		display:inline-block;vertical-align:top;
-		text-align:center;height:150px;line-height:30px;
-	}
-	@media screen and (max-width:600px){
-	.head{font-size:20px;}
-		.content{width:100%; text-align:center;}
-	}
-	</style>
+*/
+
+/* Turn off parallax scrolling for tablets and phones */
+@media screen and (max-width:600px){
+	.content{width:100%; text-align:center;}
+	.bgimg-1, .bgimg-2, .bgimg-3 {
+    background-attachment: scroll;
+    min-height: 100%;}
+}
+
+@media only screen and (max-device-width: 1000px) {
+  .bgimg-1, .bgimg-2, .bgimg-3 {
+    background-attachment: scroll;
+    min-height: 100%;}
+}
+
+
+
+#DIV_breakfast, #DIV_lunch, #DIV_dinner {
+    display:inline-block;
+    width:29.999%;
+    height:50px;
+    margin-left:2.499%;
+    text-align: center;
+} 
+
+#DIV_spring, #DIV_summer, #DIV_fall, #DIV_winter {
+    display:inline-block;
+    width:20%;
+    height:50px;
+    margin-left:4%;
+    text-align: center;
+}
+
+.btn, .btn1, .btn2 {
+    border:none;
+    /*border-style:solid;
+    border-width:5px;
+    border-color:#86F6E3;*/
+    background-color:transparent;
+}
+
+.btn3, .btn4, .btn5, .btn6 {
+    border:none;
+    /*border-style:solid;
+    border-width:5px;
+    border-color:#86F6E3;*/
+    background-color:transparent;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+</style>
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js" type="text/javascript"></script>
+    <script>
+        $(document).ready(function(){
+            $("#menu").css("width",$(".main").length*100)
+        })
+    
+    
+        $(document).ready(function(){
+        destiny_txt = ["元氣","里歐","正味","興隆居","永和豆漿","飯糰"];
+        $('.btn').on('click',function(e){
+        index = Math.floor(Math.random() * destiny_txt.length);//js亂數程式
+        $('.result').html(destiny_txt[index]);
+         });
+        });
+
+        $(document).ready(function(){
+        destiny1_txt = ["六兩三","炒飯","稀飯","素食","便當","北方拉麵","麵疙瘩","湯麵","炒麵","泡飯","泡麵"];
+        $('.btn1').on('click',function(e){
+        index = Math.floor(Math.random() * destiny1_txt.length);//js亂數程式
+        $('.result1').html(destiny1_txt[index]);
+         });
+        });
+
+        $(document).ready(function(){
+        destiny2_txt = ["六兩三","炒飯","稀飯","素食","便當","北方拉麵","麵疙瘩","湯麵","炒麵","泡飯","泡麵"];
+        $('.btn2').on('click',function(e){
+        index = Math.floor(Math.random() * destiny2_txt.length);//js亂數程式
+        $('.result2').html(destiny2_txt[index]);
+         });
+        });
+        
+        $(document).ready(function(){
+        destiny3_txt = ["嘉義八掌溪賞櫻","陽明山海芋","油桐花","美濃","駁二","旗津"];
+        $('.btn3').on('click',function(e){
+        index = Math.floor(Math.random() * destiny3_txt.length);//js亂數程式
+        $('.result3').html(destiny3_txt[index]);
+         });
+        });
+        
+        
+        $(document).ready(function(){
+        destiny4_txt = ["墾丁","澎湖","清淨","小琉球","美濃","駁二","旗津","花蓮富里金針花","陽明山繡球花", "白河蓮花"];
+        $('.btn4').on('click',function(e){
+        index = Math.floor(Math.random() * destiny4_txt.length);//js亂數程式
+        $('.result4').html(destiny4_txt[index]);
+         });
+        });
+        
+        
+        $(document).ready(function(){
+        destiny5_txt = ["擎天崗","武陵農場","奧萬大","杉林溪", "美濃","駁二","旗津"];
+        $('.btn5').on('click',function(e){
+        index = Math.floor(Math.random() * destiny5_txt.length);//js亂數程式
+        $('.result5').html(destiny5_txt[index]);
+         });
+        });
+        
+        $(document).ready(function(){
+        destiny6_txt = ["苗栗三灣落羽松","武陵農場賞梅花","杉林溪鬱金香", "美濃","駁二","旗津"];
+        $('.btn6').on('click',function(e){
+        index = Math.floor(Math.random() * destiny6_txt.length);//js亂數程式
+        $('.result6').html(destiny6_txt[index]);
+         });
+        });
+    </script>
 </head>
-<body style="margin:0px;background-color:#eeeeee;">
-	<div class="head">自我介紹</div>
-	<div class="content">
-		<div class="box">
-			<div class="title">基本資料</div>
-			<div>我住女生</div>
-			<div>我住台灣</div>
-			<div>我摩羯座</div>
-			
-		</div>
-		
-		<div class="box">
-			<div class="title">我的興趣</div>
-			<div>唱歌</div>
-			<div>畫畫</div>
-			<div>寫作</div>
-		</div>
-		
-		<div class="box">
-			<div class="title">與我聯絡</div>
-			<div>電話</div>
-			<div>信箱</div>
-			<div>訊息</div>
-		</div>
-	</div>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top content">
+  <div class="w3-bar" id="myNavbar">
+    <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+      <i class="fa fa-bars"></i>
+    </a>
+    <a href="#home" class="w3-bar-item w3-button" style="font-size:130%;">Liu Family</a>
+    <a href="#about" class="w3-bar-item w3-button w3-hide-small" style="font-size:130%;"><i class="fa fa-heart"></i>&nbsp;你們想我們嗎~</a>
+    <a href="#portfolio" class="w3-bar-item w3-button w3-hide-small" style="font-size:130%;"><i class="fa fa-fire"></i>&nbsp;甲奔甲奔</a>
+    <a href="#contact" class="w3-bar-item w3-button w3-hide-small" style="font-size:130%;"><i class="fa fa-leaf"></i>&nbsp;出去玩!!</a>
+    <a href="https://liuhappyfamily.neocities.org/Home.htm" class="w3-bar-item w3-button w3-hide-small" style="font-size:130%;" target="_blank"><i class="fa fa-home"></i>&nbsp;這裡是舊家XD</a>
+  </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+    <a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()" style="font-size:130%;"><i class="fa fa-heart"></i>你們想我們嗎~</a>
+    <a href="#portfolio" class="w3-bar-item w3-button" onclick="toggleFunction()" style="font-size:130%;"><i class="fa fa-fire"></i>甲奔甲奔</a>
+    <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()" style="font-size:130%;"><i class="fa fa-leaf"></i>出去玩!!</a>
+  </div>
+</div>
+
+<!-- First Parallax Image with Logo Text -->
+<div class="bgimg-1 w3-display-container w3-opacity-min content" id="home">
+  <div class="w3-display-middle" style="white-space:nowrap;">
+    <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">22°N <span class="w3-hide-small">Nr160</span> </span>
+  </div>
+</div>
+
+<!-- Container (About Section) -->
+<div class="w3-container w3-padding-64 content" id="about" style="margin-left:auto;margin-right:auto;max-width:70%;">
+  <h3 class="w3-center" style="font-size:400%;">你們想我們嗎~</h3><br>
+  <h3 class="w3-center" style="font-size:200%!important;">那就多看看照片吧</h3>
+  <br><br><br>
+  <div class="w3-row">
+    <div class="w3-col m6 w3-center w3-padding-large">
+      <img src="https://liuhappyfamily.neocities.org/img1.jpg" class="mySlides w3-round w3-image w3-opacity w3-hover-opacity-off" width="700" height="466">
+      <img src="https://liuhappyfamily.neocities.org/img2.jpg" class="mySlides w3-round w3-image w3-opacity w3-hover-opacity-off" width="700" height="466">
+      <img src="https://liuhappyfamily.neocities.org/img3.jpg" class="mySlides w3-round w3-image w3-opacity w3-hover-opacity-off" width="700" height="466">
+    </div>
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 1500); // Change image every 1.5 seconds
+}
+</script>
+
+  <div class="w3-col m6 w3-hide-small w3-padding-large" style="font-size:140%!important;">
+    這個網站是我們想送把拔馬麻的生日禮物!最近孟孟跟阿琪都不在家，玟玟也很少回家，所以把拔馬麻想我們的時候可以多多來這裡看看，
+    雖然這個網站還有很多不足的地方，但是我們會一起持續修改讓他變得更好!
+    <br><br>
+    祝你們生日快樂!!來吃劉家精美小蛋糕~~<br>
+    <i class="fa fa-birthday-cake"></i>&nbsp;<a href="https://liuhappyfamily.neocities.org/muffin.jpg" target="_blank">雪中小黑屋白色花園</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <i class="fa fa-birthday-cake"></i>&nbsp;<a href="https://liuhappyfamily.neocities.org/tiramisu.jpg" target="_blank">義式浪漫帶我走</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <i class="fa fa-birthday-cake"></i>&nbsp;<a href="https://liuhappyfamily.neocities.org/cake.jpg" target="_blank">苦甜小白花</a>
+      <!--<i class="fa fa-birthday-cake"></i><div style=" width: 185px; height: 243px; z-index: 1; left: 428px; top: 18px">
+          <div align="left" onmouseover="showPic(0);" onmouseout="showPic();">巧克力馬芬</div>
+          <div id="pic" width="200"></div>
+        </div>
+        
+        <script type="text/javascript">
+        var Imgs = new Array(); 
+        Imgs[0] = "https://liuhappyfamily.neocities.org/muffin.jpg";
+        function showPic(picUrl)
+        { show = document.getElementById("pic");
+          if (arguments.length>0) 
+            show.innerHTML = '<img src="' + Imgs[picUrl] + '" border=0 width="300">';
+          else
+            show.innerHTML = '';
+        }
+        </script> -->
+  </div>
+  </div><br><br><br><br><br><br>
+</div>
+
+
+
+<!-- Second Parallax Image with Portfolio Text -->
+<div class="bgimg-2 w3-display-container w3-opacity-min content">
+  <div class="w3-display-middle">
+    <span class="w3-xxlarge w3-text-white w3-wide w3-black" style="font-size:450%!important;">甲奔甲奔</span>
+  </div>
+</div>
+
+<!-- Container (Portfolio Section) -->
+<div style="margin-left:auto;margin-right:auto; max-width:auto content" class="w3-padding-64" id="portfolio">
+  <h3 class="w3-center" style="font-size:400%;">是不是在煩惱三餐吃什麼?</h3>
+  <p class="w3-center" style="font-size:200%!important;">讓我們幫你們決定吧 ^.^</p>
+  <img src="https://liuhappyfamily.neocities.org/meal.jpg" style="display:block; margin:auto;" onclick="onClick(this)" class="w3-hover-opacity pointer" alt="一開始孟孟提起這個計劃的時候，阿琪跟玟玟都覺得大概要做個半年，孟孟就說:”沒關係啊!把拔生日做不出來就變母親節禮物，母親節做不出來就變父親節禮物!”，真沒想到在孟孟不眠不休的努力還有玟玟嘔心瀝血的創作，還有琪琪打混摸魚的幫忙修改，終於在一個禮拜做完了!!!最開始只是想做一個早餐吃什麼的產生器，接著增加到三餐，好不容易用PYTHON寫出來發現不知道怎麼放到網頁上，又有人不想下載LABVIEW(不過好像也不能放網頁)，想做APP又覺得太難了。最後就”燈愣!!!!”，決定在關公面前耍大刀，挑戰把拔的權威!!所以就有這個網頁寶寶的出生!雖然他現在功能還不是很多，頁面也不夠完善，但我們會繼續跟把拔這個關公請教，讓這個網頁寶寶成長茁壯!">
+
+  <div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+    <span class="w3-button w3-large w3-black w3-display-topright" title="Close Modal Image"><i class="fa fa-remove"></i></span>
+    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+      <img id="img01" class="w3-image">
+      <p id="caption" class="w3-opacity w3-large"></p>
+    </div>
+  </div>   
+
+ <div id="DIV_breakfast">
+    <h3 style="font-size:200%!important;">早餐吃什麼好呢?</h3>
+    <button class="btn"><img src="https://liuhappyfamily.neocities.org/meme.jpg" style="display:block; margin:auto; width:95%;" class="pointer"></button>
+    <br><br>
+    <div class="result" style="font-size:200%!important;"></div><br><br>
+ </div>
+
+ <div id="DIV_lunch">
+    <h3 style="font-size:200%!important;">我的午餐呢?!!</h3>
+    <button class="btn1"><img src="https://liuhappyfamily.neocities.org/meme.jpg" style="display:block; margin:auto; width:95%;" class="pointer"></button>
+    <br><br>
+    <div class="result1" style="font-size:200%!important;"></div><br><br>
+  </div>
+
+ <div id="DIV_dinner">
+    <h3 style="font-size:200%!important;">天黑了，好餓喔...</h3>
+    <button class="btn2"><img src="https://liuhappyfamily.neocities.org/meme.jpg" style="display:block; margin:auto; width:95%;" class="pointer"></button>
+    <br><br>
+    <div class="result2" style="font-size:200%!important;"></div><br><br>
+ </div>
+
+</div>
+
+<!-- Third Parallax Image with Portfolio Text -->
+<div class="bgimg-3 w3-display-container w3-opacity-min content">
+  
+  <span class="w3-display-middle w3-xxlarge w3-text-white w3-wide" style="font-size:450%!important;">出去玩!!</span>
+     
+  <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) 
+  
+    <div>
+      <img src="https://liuhappyfamily.neocities.org/img3.jpg" style="float:left;width:20%;margin-left:4%;margin-top:35%;" onclick="onClick(this)" class="w3-hover-opacity">
+    </div>
+
+    <div>
+      <img src="https://liuhappyfamily.neocities.org/img3.jpg" style="float:left;width:20%;margin-left:4%;margin-top:35%;" onclick="onClick(this)" class="w3-hover-opacity">
+    </div>
+
+    <div>
+      <img src="https://liuhappyfamily.neocities.org/img3.jpg" style="float:left;width:20%;margin-left:4%;margin-top:35%;" onclick="onClick(this)" class="w3-hover-opacity">
+    </div>
+
+    <div>
+      <img src="https://liuhappyfamily.neocities.org/img3.jpg" style="float:left;width:20%;margin-left:4%;margin-top:35%;" onclick="onClick(this)" class="w3-hover-opacity">
+    </div>
+  -->
+
+
+
+  <!-- Modal for full size images on click
+  <div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+    <span class="w3-button w3-large w3-black w3-display-topright" title="Close Modal Image"><i class="fa fa-remove"></i></span>
+    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+      <img id="img01" class="w3-image">
+      <p id="caption" class="w3-opacity w3-large"></p>
+    </div>
+  </div>     
+  -->
+</div>
+
+<!-- Container (Contact Section) -->
+<div style="margin-left:auto;margin-right:auto; max-width:auto content" class="w3-padding-64" id="contact">
+  <h3 class="w3-center" style="font-size:400%;">看看要去哪裡企陶吧!</h3>
+  <p class="w3-center" style="font-size:200%!important;">好多漂亮的地方~</p>
+  <img src="https://liuhappyfamily.neocities.org/havefun.jpg" style="display:block; margin:auto;" onclick="onClick(this)" class="w3-hover-opacity pointer" alt="網站裡的圖都是玟玟自己畫的喔~是不是超級無敵厲害!!!!孟孟跟阿琪盯了四天的電腦都覺得眼睛要爆掉了:(把拔要記得休息喔!不要讓眼睛太累了:)">
+
+  <div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+    <span class="w3-button w3-large w3-black w3-display-topright" title="Close Modal Image"><i class="fa fa-remove"></i></span>
+    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+      <img id="img01" class="w3-image">
+      <p id="caption" class="w3-opacity w3-large"></p>
+    </div>
+  </div>   
+
+  <div id="DIV_spring">
+    <h3 style="font-size:200%!important;">春天好想去...</h3><br>
+    <button class="btn3 pointer"><img src="https://liuhappyfamily.neocities.org/spring.jpg" style="display:block; margin:auto; width:95%;" class="pointer"></button>
+    <br><br>
+    <div class="result3" style="font-size:200%!important;"></div><br><br>
+  </div>
+  
+  <div id="DIV_summer">
+    <h3 style="font-size:200%!important;">夏天就是要...</h3><br>
+    <button class="btn4 pointer"><img src="https://liuhappyfamily.neocities.org/summer.jpg" style="display:block; margin:auto; width:95%;" class="pointer"></button>
+    <br><br>
+    <div class="result4" style="font-size:200%!important;"></div><br><br>
+  </div>
+  
+  <div id="DIV_fall">
+    <h3 style="font-size:200%!important;">開學前衝一波!</h3><br>
+    <button class="btn5 pointer"><img src="https://liuhappyfamily.neocities.org/fall.jpg" style="display:block; margin:auto; width:95%;" class="pointer"></button>
+    <br><br>
+    <div class="result5" style="font-size:200%!important;"></div><br><br>
+  </div>
+  
+  <div id="DIV_winter">
+    <h3 style="font-size:200%!important;">好冷還是要玩!</h3><br>
+    <button class="btn6 pointer"><img src="https://liuhappyfamily.neocities.org/winter.jpg" style="display:block; margin:auto; width:95%;" class="pointer"></button>
+    <br><br>
+    <div class="result6" style="font-size:200%!important;"></div><br><br>
+  </div>
+
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-opacity w3-hover-opacity-off content" style="padding-top:20px!important;padding-bottom:10px!important">
+  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>重新看一遍</a>
+
+  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+</footer>
+ 
+<script>
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+// Change style of navbar on scroll
+window.onscroll = function() {myFunction()};
+function myFunction() {
+    var navbar = document.getElementById("myNavbar");
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-gray";
+    } else {
+        navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-gray", "");
+    }
+}
+
+// Used to toggle the menu on small screens when clicking on the menu button
+function toggleFunction() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else {
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+</script>
+
 </body>
 </html>
